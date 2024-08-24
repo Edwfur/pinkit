@@ -1,0 +1,76 @@
+:root {
+	/* colors */
+	--rui_color: #ec932d;
+	--rui_color00: #ec932d30;
+	--rui_color30: #db892a;
+	--rui_color70: #ff9f31;
+	--rui_danger: #f20;
+	--rui_danger30: #eb122f;
+	--rui_danger70: #ff2c0b;
+	--rui_black: #0c0c0c;
+	--rui_black30: #0c0c0c30;
+	--rui_white: #fff;
+	--rui_white30: #fff3;
+	--rui_disable: #dedede;
+	--rui_disableText: #666;
+	--rui_selectDisable: #999;
+	--rui_background: #ccc3;
+
+	/* props */
+	--rui_border: 0.0625em solid;
+
+	/* button */
+	--rui_fontSizeButton: 1em;
+	--rui_borderRadiusButton: 0.8em;
+	--rui_paddingButton: 0.5em 2.5em;
+	--rui_whiteTextButton: var(--rui_white);
+	--rui_activeButton: var(--rui_color30);
+	--rui_hoverButton: var(--rui_color70);
+	--rui_dangerActiveButton: var(--rui_danger30);
+	--rui_dangerHoverButton: var(--rui_danger70);
+	--rui_primaryColorButton: var(--rui_color);
+	--rui_whiteButton: var(--rui_white);
+	--rui_Button_border: var(--rui_border) var(--rui_primaryColorButton);
+
+	/* checkbox */
+	--rui_Checkbox_primaryColor: var(--rui_color);
+	--rui_Checkbox_dangerColor: var(--rui_danger);
+	--rui_Checkbox_disableColor: var(--rui_disable);
+	--rui_Checkbox_border: var(--rui_border) var(--rui_Checkbox_primaryColor);
+	--rui_Checkbox_borderDanger: var(--rui_border) var(--rui_Checkbox_dangerColor);
+	--rui_Checkbox_borderDisabled: var(--rui_border) var(--rui_Checkbox_disableColor);
+	/* --rui_Checkbox_:;
+	--rui_Checkbox_:;
+	--rui_Checkbox_:;
+	--rui_Checkbox_:;
+	--rui_Checkbox_:; */
+
+	/* modal */
+	--rui_Modal_background: var(--rui_black30);
+	--rui_Modal_borderRadius: 0.4em;
+	--rui_Modal_fontSize: 0.8em;
+	--rui_Modal_boxShadow: 0px 0px 35px 3px #0001;
+
+	/* input */
+	--rui_borderRadiusInput: 0.3em;
+	--rui_backgroundInput: #f0f0f0;
+	--rui_paddingInput: 0.25em 0.5em;
+
+	/* select */
+	--rui_borderColorSelect: #666;
+
+	/* table */
+	--rui_Table_backgroundColor: var(--rui_background);
+	--rui_Table_shadowColor: var(--rui_background);
+	--rui_Table_trColor: #ccc6;
+	--rui_Table_hover: #ccc4;
+	--rui_Table_borderRadius: 0.5em;
+	--rui_Table_colorError: var(--rui_danger);
+	--rui_Table_paddingHead: 0.8em;
+	--rui_Table_paddingBody: 0.4em 0.8em;
+	--rui_Table_alignHead: left;
+
+	/* dndp */
+	--rui_greyDnDP: #777;
+	--rui_borderColorDnDP: #ccc;
+}

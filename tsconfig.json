@@ -1,0 +1,21 @@
+{
+	"include": ["src/"],
+	"exclude": ["dist", "node_modules", "src/**/*.stories.*"],
+	"compilerOptions": {
+		"target": "ESNext" ,
+		"module": "esnext" ,
+		"rootDir": "./src" ,
+		"moduleResolution": "node" ,
+		"resolveJsonModule": true ,
+		"jsx": "react",
+
+		"declaration": true ,
+		"declarationMap": true ,
+		"outDir": "./dist" ,
+		"esModuleInterop": true ,
+		"forceConsistentCasingInFileNames": true,
+
+		"strict": true,
+		"skipLibCheck": true
+	}
+}

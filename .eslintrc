@@ -1,0 +1,82 @@
+{
+	"plugins": ["css-modules", "@typescript-eslint"],
+	"extends": ["plugin:storybook/recommended"],
+	"rules": {
+		"react-hooks/exhaustive-deps": "off",
+		"css-modules/no-unused-class": 1,
+		"css-modules/no-undef-class": 1,
+		"@typescript-eslint/no-unused-vars": 2,
+
+		"import/order": [
+			"error",
+			{
+				"groups": [["builtin", "external"], "internal", "object", "parent", "sibling", "index"],
+				"alphabetize": {
+					"order": "asc"
+				},
+				"pathGroups": [
+					{
+						"pattern": "react",
+						"group": "external",
+						"position": "before"
+					},
+					{
+						"pattern": "react-dom",
+						"group": "external",
+						"position": "before"
+					},
+					{
+						"pattern": "next",
+						"group": "external",
+						"position": "before"
+					},
+					{
+						"pattern": "next/**",
+						"group": "external",
+						"position": "before"
+					},
+					{
+						"pattern": "axios",
+						"group": "external",
+						"position": "before"
+					},
+					{
+						"pattern": "redprojectuikit",
+						"group": "object",
+						"position": "before"
+					},
+					{
+						"pattern": "_components/**",
+						"group": "object",
+						"position": "before"
+					},
+					{
+						"pattern": "_*/**",
+						"group": "internal",
+						"position": "before"
+					},
+					{
+						"pattern": "./styles.module.scss",
+						"group": "index",
+						"position": "after"
+					}
+				],
+				"pathGroupsExcludedImportTypes": [
+					"react",
+					"react-dom",
+					"next",
+					"next/**",
+					"axios",
+					"redprojectuikit",
+					"_components/**",
+					"_*/**",
+					"./styles.module.scss"
+				],
+				"newlines-between": "always",
+				"distinctGroup": false,
+				"warnOnUnassignedImports": false
+			}
+		]
+	},
+	"ignorePatterns": ["_legacy/**/*"]
+}

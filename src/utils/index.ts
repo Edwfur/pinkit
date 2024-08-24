@@ -1,0 +1,1 @@
+export {default as classMulti} from "./classMulti"
